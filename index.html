@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ana Carolina</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="mediaqueries.css" />
+    
+    <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,2,701,401,400,1,500&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/flower-pot.png" sizes="16x16" type="./assets/flower-pot.png">
+    <link rel="icon" href="./assets/flower-pot.png" sizes="32x32" type="./assets/flower-pot.png">
+
+  
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+      <div class="logo">Ana Carolina</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#terapia">Terapia</a></li>
+          <li><a href="#sinais">Sinais e Sintomas</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li><li>
+            <a href="#Depoimento">Depoimentos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Ana Carolina</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#terapia" onclick="toggleMenu()">Terapia</a></li>
+          <li><a href="#sinais" onclick="toggleMenu()">Sinais</a></li>
+          <li><a href="#sobre" onclick="toggleMenu()">Sobre Mim</a></li>
+          <li><a href="#Depoimento" onclick="toggleMenu()">Depoimentos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="casa" class="casa">
+      <div class="casa-text">
+        <h2>Saúde Emocional</i></h2>
+          <h3>Você no controle das suas emoções para viver melhor.</h3>
+          <p>É possível alcançar o equilíbrio emocional que te ajudará nos seus relacionamentos, no trabalho e na sua vida pessoal.</p>
+      </div>
+      <div class="casa-img">
+        <img src="./assets/Ana-PhotoRoom.png-PhotoRoom.png" />
+      </div>
+    </section>
+
+    <div id ="terapia" class="teste_section">
+      <div class="container-dentro">
+        <h1 class="titulo_teste">Como funciona a terapia</h1>
+        <p class="texto_teste">A terapia te guia para <strong>identificar e modificar</strong> pensamentos e comportamentos que causam desequilíbrio emocional e te impedem de ter a vida que você deseja.</p>
+        <p class="texto_teste"><strong>Com base científica e comprovada eficácia</strong>, a Terapia Cognitivo-Comportamental (TCC) te ajuda a:</p> 
+        <ul>
+          <li class="lista_terapia">Gerenciar suas emoções com autonomia e construir uma vida melhor.</li>
+          <li class="lista_terapia">Eliminar pensamentos e comportamentos disfuncionais que geram</li>
+          <li class="lista_terapia">Alcançar seus objetivos com mais clareza e assertividade.</li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <section id="sinais">
+      <div class="sinais-container">
+        <div class="sinais_texto">
+          <h2>Sinais para cuidar da sua saúde mental</h2>
+
+          <p class="sinais_text_p1">Cuidar da sua saúde mental é tão importante quanto cuidar do seu corpo físico. Fazer isso te ajuda a lidar com o estresse, se relacionar melhor com as pessoas e ter uma vida mais feliz.</p>
+          
+        </div>
+        <div class="sinais_colunas">
+          <div class="coluna">
+            <h3>Emoções</h3>
+            <p><img src="./assets/cansado.png" alt="Pessoa com aparência cansada" class="icon terapia-icon "/> Sente-se constantemente sem motivação e cansado(a).</p>
+            <p><img src="./assets/irritado.png" alt="Pessoa com expressão de raiva" class="icon terapia-icon"/> Frequentemente entra em conflitos com outras pessoas.</p>
+            <p><img src="./assets/inseguro.png" alt="Pessoa com expressão insegura" class="icon terapia-icon "/> Se sente insegura, incapaz, insuficiente e tem muita timidez.</p>
+          </div>
+          <div class="coluna">
+            <h3>Comportamento</h3>
+            <p><img src="./assets/triste.png" alt="Pessoa chorando" class="icon terapia-icon"/> Tem crises frequentes de tristeza, angústia e desesperança.</p>
+            <p><img src="./assets/desconcentrado.png" alt="Pessoa com expressão confusa" class="icon terapia-icon"/> Sente-se paralisado(a), sem foco e acaba procrastinando.</p>
+            <p><img src="./assets/raiva.png" alt="Pessoa gritando" class="icon terapia-icon"/> Tem dificuldade de controlar as emoções e acaba explodindo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div id="sobre" class = "about-wrapper">
+      <div class = "about-left">
+        <div class = "about-left-content">
+          <div>
+            <div class = "shadow">
+              <div class = "about-img">
+                <img src = "./assets/ana-sobre.jpg" alt = "about image">
+              </div>
+            </div>
+            <h2>Ana<br>Carolina</h2>
+            <h3>Psicóloga</h3>
+          </div>
+        </div>
+      </div>
+      <div class = "about-right"> 
+        <h2>Conheça mais</h2>
+        <h1>Sobre mim<span>!</span></h1>
+        <div class = "about-para">
+          <p>Sou psicóloga com mais de 10 anos de experiência em atendimentos clínicos. Graduada em Psicologia pela Universidade Mackenzie, com aprimoramento em Psicologia Jurídica na PUC/SP, formação em Psicologia Analítica pelo Instituto Pieron, especialização em Psicologia Positiva na University of Pennsylvania, e pós-graduação em Neuropsicologia pelo Instituto de Ciências da Mente.</p>
+        </div>
+      </div>
+    </div>
+    
+
+      <section id="Depoimento" class="testimonial-container">
+        <h2>Depoimentos de Pacientes!
+        </h2>
+        <div class="navigation">
+          <button class="arrow left" aria-label="Previous Testimonial">&laquo;</button>
+          <p class="testimonial-text">
+            "Transformei minha vida em 2 anos com a ajuda da Dra. Ana Carolina!
+            De ansiosa e em luto, a mãe empoderada que aprecia o puerpério.
+            Com a Dra. Ana Carolina ao meu lado, superei desafios, cresci e amadureci em diversos aspectos. Sua competência, empatia e sensibilidade me guiaram nesse processo transformador.
+            Minha gratidão é imensa por tê-la encontrado!"
+          </p>
+          <p class="testimonial-text hidden">
+            "Transformei caos em clareza com a Carol!
+            Do limite à paz interior, com a ajuda certa.
+            Cheguei à Carol exausta, sem saber lidar com meus problemas. Mas sua escuta atenta e acolhedora me guiou em um processo de cura e autoconhecimento.
+            Olhar para dentro doeu, mas valeu a pena!
+            Com o direcionamento e a humanidade da Carol, encontrei clareza onde antes só havia caos. Hoje, sou grata por ter encontrado essa profissional incrível."
+          </p>
+          <p class="testimonial-text hidden">
+            "Do cursinho ao autoconhecimento, com a ajuda certa.
+            Comecei a terapia com a Ana buscando controlar a ansiedade e escolher um curso. Mas descobri que era muito mais do que isso!
+            Um espaço seguro para me abrir e me conhecer.
+            Desde a primeira sessão, a Ana me transmitiu confiança e me acolheu. Hoje, consigo me entender melhor, identificar meus anseios e gatilhos, e me aceitar como sou.
+            Um caminho que não preciso trilhar sozinha.
+            Com o apoio da Ana, sei que posso superar meus desafios e alcançar meus objetivos."
+          </p>
+          <button class="arrow right" aria-label="Next Testimonial">&raquo;</button>
+        </div>
+      </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Agende sua sessão</p>
+      <h1 class="contato-titulo">Entre em contato</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/whatsapp (1).png"
+            alt="WhatsApp icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://api.whatsapp.com/send?phone=5511910253403">WhatsApp</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/psi.anacarolinasauaia/">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#terapia">Terapia</a></li>
+            <li><a href="#sinais">Sinais e Sintomas</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Ana Carolina. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/carrossel.js"></script>
+    <script src="./js/animaçaoDepo.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,295 @@
+/* Media query para telas menores que 600px */
+@media screen and (max-width: 600px) {
+  /* Adicione 'overflow-x: hidden;' para ocultar a barra de rolagem horizontal */
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    width: 100%; /* Defina a largura para 100% para que se ajuste à largura da tela */
+    padding: 0 10px; /* Adicione algum espaço nas laterais, se necessário */
+    box-sizing: border-box; /* Certifique-se de incluir preenchimentos e bordas na largura */
+  }
+}
+
+/* Media query para telas menores que 768px */
+@media screen and (max-width: 768px) {
+  #sinais {
+    padding: 5vh; 
+    margin: 0 2rem; 
+  }
+
+  .sinais_colunas {
+    flex-direction: column; 
+  }
+
+  .coluna-container {
+    flex: 1; 
+    margin-bottom: 2rem;
+  }
+
+  .terapia-container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: flex-start; /* Align text to the left on small screens */
+    .terapia_img {
+      margin-right: 0; /* Remove margin-right on small screens */
+      width: 100%;
+    }
+  }
+}
+
+/* Media query para telas menores que 600px */
+@media screen and (max-width: 600px) {
+  .testimonial-container{
+    display: none;
+  }
+
+  .casa-text h3::before{
+    display: none;
+  }
+
+  #contact,
+  footer {
+    height: 40vh;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .sobre-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 8px;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  /* Estilos específicos para a seção "casa" */
+  .casa-img {
+    display: none; 
+  }
+
+  .casa-text {
+    text-align: center; 
+    margin: auto; 
+    max-width: 80%; 
+  }
+
+  .casa-text h3 {
+    padding-left: 0; 
+    text-align: center;
+  }
+  
+  /* Estilos específicos para a seção "sinais e sintomas" */
+  #sinais {
+    margin: 0 5%;
+  }
+
+  .sinais_colunas {
+    flex-direction: column;
+  }
+
+  .coluna {
+    flex: 1 1 100%; 
+    margin-bottom: 2rem;
+  }
+
+  .sobre-pic, .sobre_pic-container,
+  #sobre-mim, .terapia_img {
+    display: none !important;
+  }
+}
+
+/* Media query para telas menores que 1400px */
+@media screen and (max-width: 1400px) {
+  .sobre-containers {
+    flex-wrap: wrap;
+  }
+  #contact {
+    height: fit-content;
+  }
+}
+
+/* Media query para telas menores que 1200px */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .sobre-containers {
+    margin-top: 0;
+  }
+}
+
+/* Seção terapia */
+
+@media screen and (max-width: 1200px) {
+  .container-dentro {
+    padding: 80px;
+    text-align: center; /* Center-align the text */
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+
+  .container-dentro {
+    width: 100%;
+    padding: 80px; /* Adjusted padding for better consistency */
+    text-align: center; /* Center-align the text */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+
+  .texto_teste {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-dentro {
+    padding: 60px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    box-sizing: border-box;
+  }
+
+  .texto_teste {
+    font-size: 0.8rem;
+  }
+}
+
+/* Para dispositivos móveis */
+@media screen and (max-width: 991px) {
+  .about-right {
+    display: block; /* Garante que apenas .about-right será exibido */
+    background: #F2F1EB;
+    padding: 0 2rem; /* Reduz um pouco o preenchimento */
+    text-align: center;
+  }
+
+  .about-right h1 {
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+
+  .about-right h1 span {
+    display: none; /* Oculta a parte span do título */
+  }
+
+  .about-right h2 {
+    font-size: 2rem; /* Reduz o tamanho do sub-título */
+  }
+
+  .about-para p {
+    font-size: 1.2rem; /* Reduz o tamanho do texto */
+  }
+}
+
+/* Para dispositivos móveis */
+@media screen and (max-width: 991px) {
+  .about-left {
+    display: none; /* Esconde apenas a parte esquerda */
+  }
+
+  .about-right {
+    display: block; /* Garante que apenas .about-right será exibido */
+    background: #F2F1EB;
+    padding: 0 2rem; /* Reduz um pouco o preenchimento */
+    text-align: center;
+  }
+
+  .about-right h1 {
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+
+  .about-right h1 span {
+    display: none; /* Oculta a parte span do título */
+  }
+
+  .about-right h2 {
+    font-size: 2rem; /* Reduz o tamanho do sub-título */
+  }
+
+  .about-para p {
+    font-size: 1.2rem; /* Reduz o tamanho do texto */
+  }
+}
+
+/* Para laptops e desktops */
+@media screen and (min-width: 992px) {
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-left {
+    position: relative;
+  }
+
+  .about-left-content {
+    position: absolute;
+    right: -50px;
+  }
+}
